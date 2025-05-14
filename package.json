@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "dev": "node --disable-warning=ExperimentalWarning esbuild.config.ts",
+    "build": "node --disable-warning=ExperimentalWarning esbuild.config.ts production"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.18",
+    "esbuild": "^0.25.4",
+    "prettier": "^3.5.3"
+  },
+  "type": "module"
+}
