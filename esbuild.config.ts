@@ -20,8 +20,9 @@ const buildOptions: BuildOptions = {
   // minify: prod,
   minify: false,
   minifyWhitespace: true,
-  sourcemap: prod ? false : 'inline',
-  outfile: './chrome-extension/content.js',
+  // sourcemap: prod ? false : 'inline',
+  sourcemap: false,
+  outfile: './chrome-extension/js/content.js',
 };
 
 const context = await esbuild.context(buildOptions);
