@@ -20,8 +20,7 @@ const buildOptions: BuildOptions = {
   // minify: prod,
   minify: false,
   minifyWhitespace: true,
-  // sourcemap: prod ? false : 'inline',
-  sourcemap: false,
+  sourcemap: prod ? false : 'inline',
   outfile: './chrome-extension/js/content.js',
 };
 
