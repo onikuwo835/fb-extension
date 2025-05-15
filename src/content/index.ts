@@ -7,6 +7,9 @@ console.log('hello world');
 // });
 
 const observer = new MutationObserver((mutations, observer) => {
+  const { pathname } = location;
+  if (!pathname.startsWith('/marketplace')) return;
+
   document.querySelectorAll('a[href^="/marketplace/item"] img[src^="https://scontent"]:not(:has(+ div.fb-extension.banner))').forEach((e) => {
     const div = document.createElement('div');
     div.className = 'fb-extension banner';
